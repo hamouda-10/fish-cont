@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-ruqaa: "Aref Ruqaa", serif;
+  --font-num: "Cairo", "Aref Ruqaa", sans-serif;
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    direction: rtl;
+    background-color: #070a0e;
+    color: #f4f6f8;
+    font-family: var(--font-ruqaa);
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #070a0e;
+    color: #f4f6f8;
+    font-family: var(--font-ruqaa);
+    font-size: 19px;
+    line-height: 1.75;
+    overflow-x: hidden;
+  }
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tabular-egp {
+  font-family: var(--font-num);
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

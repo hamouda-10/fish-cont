@@ -1,0 +1,8 @@
+{
+  "name": "المرجان — متجر أحواض سمك الزينة",
+  "description": "متجر مصري متكامل لبيع وتجهيز أحواض سمك الزينة الفاخرة بأسعار الجنيه المصري وتوصيل لجميع محافظات مصر.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
